@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-label: "Manrope", sans-serif;
+
+  --color-on-background: #4e2120;
+  --color-surface-variant: #ffd2d0;
+  --color-primary-container: #ff7851;
+  --color-outline-variant: #e09c99;
+  --color-secondary-container: #c9cfff;
+  --color-secondary: #4052b6;
+  --color-surface-container-high: #ffdad8;
+  --color-primary-dim: #962700;
+  --color-background: #fff4f3;
+  --color-surface-container-low: #ffedeb;
+  --color-surface-bright: #fff4f3;
+  --color-inverse-surface: #240304;
+  --color-on-surface: #4e2120;
+  --color-surface-container: #ffe1e0;
+  --color-on-tertiary-fixed-variant: #00675d;
+  --color-on-primary-fixed-variant: #581300;
+  --color-on-surface-variant: #834c4b;
+  --color-surface-dim: #ffc7c4;
+  --color-on-tertiary: #c0fff4;
+  --color-inverse-on-surface: #ce8c89;
+  --color-surface-container-highest: #ffd2d0;
+  --color-tertiary-container: #85f6e5;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-secondary-container: #2a3da1;
+  --color-secondary-fixed-dim: #b7c0ff;
+  --color-on-tertiary-fixed: #004841;
+  --color-primary: #ab2d00;
+  --color-primary-fixed-dim: #ff5d2b;
+  --color-secondary-fixed: #c9cfff;
+  --color-on-error: #ffefee;
+  --color-tertiary-fixed: #85f6e5;
+  --color-error-container: #fb5151;
+  --color-on-secondary: #f3f1ff;
+  --color-on-secondary-fixed: #10268d;
+  --color-primary-fixed: #ff7851;
+  --color-on-primary-fixed: #000000;
+  --color-outline: #a26765;
+  --color-surface-tint: #ab2d00;
+  --color-surface: #fff4f3;
+  --color-tertiary: #00675d;
+  --color-tertiary-dim: #005a51;
+  --color-on-primary: #ffefeb;
+  --color-tertiary-fixed-dim: #76e7d7;
+  --color-on-secondary-fixed-variant: #3447ab;
+  --color-error-dim: #9f0519;
+  --color-on-tertiary-container: #005c53;
+  --color-secondary-dim: #3346a9;
+  --color-on-error-container: #570008;
+  --color-on-primary-container: #470e00;
+  --color-inverse-primary: #ff5722;
+  --color-error: #b31b25;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-body;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.asymmetric-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (max-width: 768px) {
+  .asymmetric-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

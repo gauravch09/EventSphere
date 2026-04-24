@@ -1,0 +1,7 @@
+{
+  "name": "Event Sphere",
+  "description": "A hyper-local event ticketing platform for college and local events with real-time seat tracking and QR code validation.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
